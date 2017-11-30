@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xBn-hO-CY3">
                                 <rect key="frame" x="125" y="69" width="125" height="29"/>
@@ -64,11 +64,45 @@
                         <outlet property="emailText" destination="ePh-Sw-W6r" id="Y7J-nn-cs4"/>
                         <outlet property="passwordText" destination="8Vr-g8-tqJ" id="twU-pl-Kwp"/>
                         <outlet property="segmentControl" destination="xBn-hO-CY3" id="A2C-x3-6Zr"/>
+                        <segue destination="nC6-tw-eRF" kind="show" identifier="segue" id="UuO-2n-rwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="HVp-cM-LrB">
+            <objects>
+                <viewController id="nC6-tw-eRF" customClass="ViewController2" customModule="safeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2V4-1a-ptW"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1z-zE-zUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DKY-q4-mde">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD2-Vy-cZP">
+                                <rect key="frame" x="163" y="496" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action:" destination="nC6-tw-eRF" eventType="touchUpInside" id="sPu-Pi-rsX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue2" id="S0B-0W-6FV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="me1-Dc-DgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="124"/>
         </scene>
     </scenes>
 </document>

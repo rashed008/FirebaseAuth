@@ -14,6 +14,7 @@
 		CEB013391FCF212C00ABA978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB013381FCF212C00ABA978 /* Assets.xcassets */; };
 		CEB0133C1FCF212C00ABA978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB0133A1FCF212C00ABA978 /* LaunchScreen.storyboard */; };
 		CEB013441FCF218400ABA978 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB013431FCF218400ABA978 /* GoogleService-Info.plist */; };
+		CECC812C1FCFD900002F9FE4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC812B1FCFD900002F9FE4 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEB0133B1FCF212C00ABA978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB0133D1FCF212C00ABA978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB013431FCF218400ABA978 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CECC812B1FCFD900002F9FE4 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				CEB013311FCF212C00ABA978 /* AppDelegate.swift */,
 				CEB013331FCF212C00ABA978 /* ViewController.swift */,
+				CECC812B1FCFD900002F9FE4 /* ViewController2.swift */,
 				CEB013351FCF212C00ABA978 /* Main.storyboard */,
 				CEB013381FCF212C00ABA978 /* Assets.xcassets */,
 				CEB0133A1FCF212C00ABA978 /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 			files = (
 				CEB013341FCF212C00ABA978 /* ViewController.swift in Sources */,
 				CEB013321FCF212C00ABA978 /* AppDelegate.swift in Sources */,
+				CECC812C1FCFD900002F9FE4 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,7 @@
 				CEB013421FCF212C00ABA978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

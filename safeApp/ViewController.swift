@@ -24,7 +24,8 @@ class ViewController: UIViewController {
             {
                 Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!, completion: {(user, error) in
                     if user != nil {
-                        
+                        //Sign in successful
+                        self.performSegue(withIdentifier: "segue", sender: self)
                     }
                     else
                     {
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
                 Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
                     if user != nil
                     {
-                        
+                        self.performSegue(withIdentifier: "segue", sender: self)
                     }
                     else
                     {
